@@ -1,4 +1,4 @@
-FROM golang:1.25
+FROM golang:1.25.0
 
 WORKDIR /app
 
@@ -17,4 +17,4 @@ COPY --from=builder /app/tracker-app .
 
 EXPOSE 8080
 
-CMD ["./tracker-app"]
+CMD ["./main"]
